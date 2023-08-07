@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Saturnino</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Biblioteca Saturnino</a>
+        <ul>
+            <li><a href="#" class="active">Início</a></li>
+            <li><a href="#">Catalago</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>Biblioteca</span><br>Saturnino</h2>
+        <img src="img/bird1.png" id="bird1">
+        <img src="img/bird2.png" id="bird2">
+        <img src="img/forest.png" id="forest">
+        <a href="#" id="btn">Explorar</a>
+        <img src="img/rocks.png" id="rocks">
+        <img src="img/water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>Livros</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero iste laboriosam iusto sapiente voluptatum a,
+            incidunt culpa quae. Necessitatibus vero exercitationem accusantium nemo culpa ipsa tempora quia? Aliquam,
+            nemo doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quidem dolore atque maiores
+            laudantium, corporis quam quisquam vero repellat ad nobis asperiores incidunt veritatis neque eum delectus
+            consequuntur quibusdam eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cumque
+            molestiae fugit ratione aliquam suscipit, perspiciatis in quod molestias quisquam doloribus at tempore.
+            Minima aperiam molestias in nobis eaque ipsan.<br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero iste laboriosam iusto sapiente
+            voluptatum a, incidunt culpa quae. Necessitatibus vero exercitationem accusantium nemo culpa ipsa
+            tempora quia? Aliquam, nemo doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+            quidem dolore atque maiores laudantium, corporis quam quisquam vero repellat ad nobis asperiores
+            incidunt veritatis neque eum delectus consequuntur quibusdam eaque.<br><br>Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Vero iste laboriosam iusto sapiente voluptatum a, incidunt culpa
+            quae. Necessitatibus vero exercitationem accusantium nemo culpa ipsa tempora quia? Aliquam, nemo
+            doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quidem dolore atque maiores
+            laudantium, corporis quam quisquam vero repellat ad nobis asperiores incidunt veritatis neque eum
+            delectus consequuntur quibusdam eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Impedit cumque molestiae fugit ratione aliquam suscipit, perspiciatis in quod molestias quisquam
+            doloribus at tempore. Minima aperiam molestias in nobis eaque ipsam.<br><br>Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Vero iste laboriosam iusto sapiente voluptatum a, incidunt culpa
+            quae. Necessitatibus vero exercitationem accusantium nemo culpa ipsa tempora quia? Aliquam, nemo
+            doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quidem dolore atque maiores
+            laudantium, corporis quam quisquam vero repellat ad nobis asperiores incidunt veritatis neque eum
+            delectus consequuntur quibusdam eaque.</p><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero iste laboriosam iusto sapiente
+            voluptatum a, incidunt culpa quae. Necessitatibus vero exercitationem accusantium nemo culpa
+            ipsa tempora quia? Aliquam, nemo doloribus. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Id quidem dolore atque maiores laudantium, corporis quam C Quisquam vero
+            repellat ad nobis asperiores incidunt veritatia neque eum delectus consequuntur quibusdam
+            eaque</p>
+        </p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            text.style.top = value * -0.5  + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        });
+    </script>
+</body>
+
+</html>
